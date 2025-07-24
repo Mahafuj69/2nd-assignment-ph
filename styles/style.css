@@ -56,6 +56,11 @@
 
 /* banner styles */
 
+.banner-container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -122,6 +127,11 @@
     }
 /*  plant styles */
 
+.section-container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .Plant-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
@@ -158,7 +168,6 @@
 
 /* flower badge styles */
 
-
 .flowers-section {
     display: flex;
     justify-content: space-between;
@@ -190,7 +199,7 @@
 }
 
 .list-heading{
-    font-size: 90px;
+    font-size: 68px;
     margin-left: 70px;
     font-weight: bold;
 }
@@ -200,16 +209,18 @@ margin-bottom: 110px;
 }
 
 .list-items {
-    font-size: 30px;
+    font-size: 24px;
     padding: 5px;
   margin-top: 5px;
 }
 
 /* Challenge parts styles */
 
-
-.container {
-  max-width: 1200px;
+.container-1{
+  margin-bottom: 85px;
+}
+.container{
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -255,7 +266,7 @@ h2 span {
   border-radius: 12px;
   overflow: hidden;
   height: 180px;
-  color: #fff;
+  color: #ffffff;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -303,31 +314,118 @@ h2 span {
 }
 
 /* Input field styles */
+.input-container{
+ max-width: 1400px;
+  margin: 0 auto; 
+}
+
 .subscribe-container {
+  position: relative;
   background-image: url('../images/news-letter-bg.png');
   text-align: center;
     padding: 50px 0;
-    height: 300px;
-  margin-top: 20px;
+    width: 1440px;
+    height: 453px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+ 
 }
 
 .subscribe-container h1 {
-  color: white;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
   font-size: 36px;
   margin-top: 100px;
 }
 
 .subscribe-container input {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
-  /* margin-right: ; */
   width: 430px;
-  border-radius: 4px;
+   border: none;
 }
 
 .subscribe-container button {
+   position: absolute;
+  top: 250px;
+  left: 65.6%;
   padding: 10px 20px;
   background-color: orange;
   border: none;
   color: white;
   cursor: pointer;
+}
+.subscribe-container button:hover {
+  background-color: #ff6600;
+}
+/* footer styles */
+.footer {
+  position: relative;
+  height: 200px;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+/* Social icons at top right */
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+  
+}
+
+.twitter{
+  margin-top: 10px;
+}
+
+/* Footer left section */
+.footer-left {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 250px;
+}
+
+.footer-left .logo {
+  width: 135px;
+  height: 82px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  width: auto;
+  font-size: 20px;
+  color: #555;
+}
+
+/* Footer links - two columns */
+.footer-links {
+  position: absolute;
+  left: 700px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 170px;
+}
+
+.footer-links .column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 25px;
 }
