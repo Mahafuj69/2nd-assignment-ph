@@ -59,7 +59,8 @@
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 40px 80px;
+    align-items: center;
+    background-color: #f1be06;
 }
 
 .banner-text {
@@ -113,7 +114,7 @@
         margin-bottom: 20px;
     }
 
-.card-container {
+.Plant-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px; 
@@ -123,28 +124,27 @@
 
 }
 
-.card {
+.Plant {
   width: 300px;
   border: 1px;
   text-align: center;
 }
-.card img {
+.Plant img {
   width: 100%;
   height: auto;
 }
-.card h3 {
+.Plant h3 {
   font-size: 1.2em;
 }
-.card p {
+.Plant p {
   font-size: 1em;
   color: #555;
 }
-.card button {
+.Plant button {
   background-color: #ff6600;
   color: white;
   border: none;
   padding: 10px 20px;
-  
   cursor: pointer;
 }
 
@@ -188,4 +188,101 @@
 .list-items {
   padding: 5px;
   margin-top: 5px;
+}
+
+/* Challenge parts styles */
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  color: orange;
+}
+
+.description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+.deals {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.right-card {
+  flex: 3;
+  min-width: 300px;
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 180px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.card a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.bloom {
+    background-image: url('../images/deal-bloom.png');
+}
+
+.ana {
+  background-image: url('../images/deal-ana.png');
+}
+
+.zabo {
+  background-image: url('../images/deal-zabo.png');
+    height: 400px;
 }
