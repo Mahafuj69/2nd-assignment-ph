@@ -68,7 +68,7 @@
     justify-content: center;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    margin-left: 90px;
+    margin-left: 20px;
     width: 400px;
 }
 
@@ -146,4 +146,46 @@
   padding: 10px 20px;
   
   cursor: pointer;
+}
+
+/* flower badge styles */
+
+
+.flowers-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    margin: 30px 0;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.golden-logo {
+  position: absolute;
+  top: -120px;
+  right: -110px;
+  width: 300px;  
+  height: auto;
+  z-index: 2;
+}
+
+.list-heading{
+    margin-left: 47px;
+}
+
+.list-items {
+  padding: 5px;
+  margin-top: 5px;
 }
