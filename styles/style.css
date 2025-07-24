@@ -1,10 +1,6 @@
 
-
-.inter-normal {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+*{
+        font-family: 'Arial', sans-serif;
 }
 
 .body {
@@ -14,6 +10,9 @@
     background-color: #f4f4f4;
 }
 
+
+
+/* nav bar styles */
 
 .navbar {
     display: flex;
@@ -34,13 +33,16 @@
     margin: 0 15px;
 }
 .first {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
     font-size: medium;
     font-weight: bold;
 }
 
 .cart{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
     font-size: medium;
-     font-weight: bold;
     }
 .nav-links a {
     text-decoration: none;
@@ -49,4 +51,99 @@
 
 .nav-links a:hover {
     color: #007bff;
+}
+
+
+/* banner styles */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 80px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-left: 90px;
+    width: 400px;
+}
+
+.black{
+    font-size: 30px;
+    color: #000000;
+}
+.orange{
+    font-size: 30px;
+    color: #f1be06;
+}
+.banner-description{
+    font-size: 15px;
+    color: rgba(50, 50, 49, 0.694);
+}
+
+.banner-img{
+    margin-left: 400px;
+    width: 800px;
+}
+
+/* card styles */
+
+.section-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color:  #000000;
+}
+
+.section-title-highlight {
+    color: #f1be06;
+}
+
+.section-description
+    {
+        font-size: 1.2rem;
+        color: #6e6969;
+        margin-bottom: 20px;
+    }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.card {
+  width: 300px;
+  border: 1px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  font-size: 1.2em;
+}
+.card p {
+  font-size: 1em;
+  color: #555;
+}
+.card button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  
+  cursor: pointer;
 }
