@@ -184,23 +184,26 @@
 }
 
 .main-img {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  top: -260px;
+  right: 5px;
+  width: 450px;
+  height: 504px;
   display: block;
 }
 
 .golden-logo {
   position: absolute;
-  top: -120px;
-  right: -110px;
-  width: 300px;  
-  height: auto;
+  top: -345px;
+  right: -60px;
+  width: 200px;  
+  height: 200px;
   z-index: 2;
 }
 
 .list-heading{
-    font-size: 68px;
-    margin-left: 70px;
+    font-size: 50px;
+    margin-left: 45px;
     font-weight: bold;
 }
 
@@ -209,7 +212,7 @@ margin-bottom: 110px;
 }
 
 .list-items {
-    font-size: 24px;
+    font-size: 22px;
     padding: 5px;
   margin-top: 5px;
 }
@@ -403,7 +406,7 @@ h2 span {
 
 .footer-left p {
   width: auto;
-  font-size: 20px;
+  font-size: 22px;
   color: #555;
 }
 
@@ -427,5 +430,5 @@ h2 span {
 .footer-links a {
   text-decoration: none;
   color: #333;
-  font-size: 25px;
+  font-size: 16px;
 }
