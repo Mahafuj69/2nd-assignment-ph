@@ -56,51 +56,53 @@
 
 /* banner styles */
 
-.banner-container{
-  max-width: 1400px;
-  margin: 0 auto;
+.banner-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
 }
 
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 90px;
+.text-section {
+  flex: 1 1 300px;
+  max-width: 600px;
 }
 
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 50px;
-    font-weight: bold;
-    
- 
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 5vw, 48px);
+  line-height: 1.2;
 }
 
-.black{
-    font-size: 50px;
-    color: #000000;
-}
-.orange{
-    font-size: 50px;
-    color: #f1be06;
+.black-text {
+  color: black;
+  font-weight: bold;
 }
 
-.banner-text h1 {
-    margin-left: 200px;
-}   
-.banner-description{
-    margin-left: 200px;
-    font-size: 15px;
-    color: rgba(50, 50, 49, 0.694);
+.orange-text {
+  color: #e94e1b;
+  font-weight: bold;
 }
 
-.banner-img{
-    margin-right:  400px;
-    width: 800px;
+p {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.image-section {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* card styles */
@@ -225,6 +227,7 @@ margin-bottom: 110px;
 .container{
   max-width: 1400px;
   margin: 0 auto;
+
 }
 
 h2 {
@@ -249,6 +252,7 @@ h2 span {
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin-left: 30px;
 }
 
 .left-cards {
@@ -375,7 +379,6 @@ h2 span {
   padding: 50px 0;
   margin-top: 50px;
 }
-/* Social icons at top right */
 .social-icons {
   position: absolute;
   top: 20px;
@@ -389,7 +392,6 @@ h2 span {
   margin-top: 10px;
 }
 
-/* Footer left section */
 .footer-left {
   position: absolute;
   left: 50px;
@@ -410,7 +412,6 @@ h2 span {
   color: #555;
 }
 
-/* Footer links - two columns */
 .footer-links {
   position: absolute;
   left: 700px;
