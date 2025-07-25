@@ -375,9 +375,9 @@ h2 span {
 /* footer styles */
 .footer {
   position: relative;
-  height: 200px;
+  height: 100px;
   padding: 50px 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .social-icons {
   position: absolute;
@@ -385,7 +385,6 @@ h2 span {
   right: 30px;
   display: flex;
   gap: 15px;
-  
 }
 
 .twitter{
@@ -408,28 +407,42 @@ h2 span {
 
 .footer-left p {
   width: auto;
-  font-size: 22px;
+  font-size: 20px;
   color: #555;
 }
 
 .footer-links {
   position: absolute;
-  left: 700px;
+  left: 500px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: row;
-  gap: 170px;
+  gap: 130px;
 }
 
 .footer-links .column {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
+}
+
+/* /* Desktop media query  */
+@media (min-width: 1200px) {
+  .navbar, .section-container, .container, .input-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .Plant-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .deals {
+    flex-direction: row;
+  }
 }
